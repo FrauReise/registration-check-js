@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Registration form</title>
+	<link rel="stylesheet" href="assets/style/normalize.css">
+	<link rel="stylesheet" href="assets/style/style.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="header-title">Приветствуем вас на борту нашего космолёта!</h1>
+
+	</header>
+
+	<main class="main">
+		<h2 class="subtitle">Пожалуйста зарегистрируйтесь</h2>
+
+		<div class="form-container">
+			<form class="form" action="">
+				<p>
+					<label for="formGroupName" class="form-font">ФИО космонавта/космонавтки:</label>
+					<input type="text" class="form-control" id="formGroupName" 
+					placeholder="name" title="Пример: Гагарин Юрий Алексеевич">
+				</p>
+
+				<p>
+					<label for="formGroupNickname" class="form-font">Придумайте никнейм для шпионских миссий:</label>
+					<input type="text" class="form-control" id="formGroupNickname" 
+					placeholder="nickname" title="Пример никнейма: inner_space">
+				</p>
+
+				<p>
+					<label for="email" class="form-font">Введите email для писем с Земли:</label>
+					<input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" 
+					placeholder="email" title="Пример email: space-post006@mail.com">
+				</p>
+
+				<p>
+					<label for="email" class="form-font">Введите надёжный пароль:</label>
+					<input type="password" class="form-control password" id="exampleInputPassword1" 
+					placeholder="password" title="Пример пароля: pdaFBJ357&">
+				
+				</p>
+
+				<p>
+					<label for="exampleInputPhone" class="form-font">Ваш Земной номер телефона</label>
+					<input type="phone" class="form-font" id="exampleInputPhone" 
+						placeholder="phone" title="Пример номера тел: +7 xxx xxx xx xx">
+				</p>
+
+
+				<fieldset>
+					<legend class="form-font">Ваши лучшие друзья:</legend>
+					<label>
+						<input type="radio" name="level" checked>
+						Добросердечные земляне<br>
+					</label>
+					<label>
+						<input type="radio" name="level">
+						Арктурианцы-телепаты<br>
+					</label>
+					<label>
+						<label>
+							<input type="radio" name="level">
+							Противоречивые эвоки<br>
+						</label>
+						<label>
+							<input type="radio" name="level">
+							Аннунаки с Нибиру<br>
+						</label>
+				</fieldset>
+
+				<textarea name="comments" id="comments" rows="5"
+					cols="20" maxlength="350">Важные заметки для капитана космолёта</textarea>
+
+				<button class="btn" type="button" onclick="check()">Поехали</button>
+
+
+
+			</form>
+
+
+		</div>
+
+
+	</main>
+
+	<script src="assets/script/script.js"></script>
+	
+	
+</body>
+
+</html>

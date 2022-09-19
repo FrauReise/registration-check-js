@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url("assets/fonts/Roboto-Medium.ttf") format("ttf");
+}
+
+.header-title,
+.subtitle {
+    font-family: 'Roboto-Medium', Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: rgb(76, 10, 130);
+}
+
+.form-font,
+.fieldset-font {
+    font-size: 1.8em;
+    color: white;
+}
+
+.form-container,
+.container-color {
+    display: flex;
+    width: 500px;
+    padding: 3%;
+    margin: auto;
+    background-color: rgba(123, 0, 255, 0.422);
+    border-radius: 18px;
+}
+
+.form {
+    padding: 5%;
+}
+
+
+.btn {
+    font-size: 1.5em;
+    height: 40px;
+    color: white;
+    background-color: rgb(126, 66, 210);
+    border: none;
+    margin: 2%;
+}
+
+.error {
+    font-size: 1.5em;
+    color: rgb(200, 0, 200);
+}
