@@ -1,15 +1,4 @@
-let validateName = (nameField) => {
-    let nameFormat = /^([А-ЯA-Z]|[А-ЯA-Z][\x27а-яa-z]{1,}|[А-ЯA-Z][\x27а-яa-z]{1,}\-([А-ЯA-Z][\x27а-яa-z]{1,}|(оглы)|(кызы)))\040[А-ЯA-Z][\x27а-яa-z]{1,}(\040[А-ЯA-Z][\x27а-яa-z]{1,})?$/;
-    if (nameField.match(nameFormat)) {
-        return true;
-    }
-    else {
-        alert("Ведите корректное имя!)");
-        document.getElementById('formGroupName').value = "";
-        return false;
-    }
-}
-
+"use strict";
 
 let validateNickName = (nickNameField) => {
     let nickNameFormat = /^[a-z0-9_-]{3,16}$/;
@@ -63,7 +52,6 @@ let validatePhone = (phoneField) => {
 }
 
 const check = () => {
-    let name = document.getElementById('formGroupName').value;
     let nickName = document.getElementById('formGroupNickname').value;
     let email = document.getElementById('exampleInputEmail').value;
     let password = document.getElementById('exampleInputPassword1').value;
@@ -71,8 +59,6 @@ const check = () => {
     
     if(validateNickName(nickName) == false){
         return;
-    } else if(validateName(name) == false){
-        return;   
     } else if(validateEmail(email) == false){
         return;
     } else if(validatePassword(password) == false){
